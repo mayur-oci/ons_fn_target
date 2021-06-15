@@ -1,0 +1,30 @@
+{
+   "dedupeKey":"3e40fafa-04de-427e-8777-095f9415da6c",
+   "title":"cpuLoadMoreThan60Percent",
+   "type":"OK_TO_FIRING",
+   "severity":"CRITICAL",
+   "timestampEpochMillis":1623395100000,
+   "timestamp":"2021-06-11T07:05:00Z",
+   "alarmMetaData":[
+      {
+         "id":"ocid1.alarm.oc1.us-sanjose-1.aaaaaaaasta5t7ofqehj5b5r4e5lti3xumyetr5wyj45f3maiac4mf45secq",
+         "status":"FIRING",
+         "severity":"CRITICAL",
+         "query":"CpuUtilization[1m]{availabilityDomain = \"pqpf:US-SANJOSE-1-AD-1\"}.mean() > 50",
+         "totalMetricsFiring":1,
+         "dimensions":[
+            {
+               "instancePoolId":"Default",
+               "resourceDisplayName":"ubuntu",
+               "faultDomain":"FAULT-DOMAIN-2",
+               "resourceId":"ocid1.instance.oc1.us-sanjose-1.anzwuljruwpiejqcshxer5x7zcsln2bk27vx4r5oy3qbaftkozjxd4ilbdha",
+               "availabilityDomain":"pqpf:US-SANJOSE-1-AD-1",
+               "imageId":"ocid1.image.oc1.us-sanjose-1.aaaaaaaasgfnf2zpd45xotkww5fqv5xu4fedeypucu7vdc4ph6daxb72bcqa",
+               "region":"us-sanjose-1",
+               "shape":"VM.Standard.E4.Flex"
+            }
+         ]
+      }
+   ],
+   "version":1.1
+}
