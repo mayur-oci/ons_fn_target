@@ -24,7 +24,7 @@ TAIL_URL=tcp://logs5.papertrailapp.com:45170 #optional
 if [ ! -z "$TAIL_URL" ]; then
    fn update app $FN_APP_NAME --syslog-url $TAIL_URL
 fi
-docker login -u 'intrandallbarnes/mayur.raleraskar@oracle.com' -p '2m{s4WTCXysp:o]tGx4K' sjc.ocir.io
+docker login -u 'intrandallbarnes/mayur.raleraskar@oracle.com' -p 'auth_token_from_oci' sjc.ocir.io
 fn -v deploy --app $FN_APP_NAME --no-bump
 
 DEBUG=1 fn invoke $FN_APP_NAME $FN_NAME < test_alarm_message.json
